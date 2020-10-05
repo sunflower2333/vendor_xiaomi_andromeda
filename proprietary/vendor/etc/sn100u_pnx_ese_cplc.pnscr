@@ -42,7 +42,7 @@ send 220000^M
 # 620008C00100010301C001^M<<NFCEE_DISCOVER_NTF>> C0 disabled
 #  Host ID:C0
 #  NFCC has control of the NFCEE power supply
-send 010003810201[1;35m HCI admin: get session id
+send 010003810201
 # 600603010101^M<<CORE_CONN_CREDITS_NTF>>
 # 01000A818046F7656673F76566[1;35m HCI admin: any ok
 # 010007810103028182C0[1;35m HCI admin: set whitelist

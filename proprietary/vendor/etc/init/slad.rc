@@ -8,3 +8,7 @@ on property:vendor.sla.enabled=1
 
 on property:vendor.sla.enabled=0
     stop slad
+
+on post-fs-data
+    mkdir /data/vendor/misc/sla 0770 system system
+    insmod /vendor/lib/modules/sla.ko
